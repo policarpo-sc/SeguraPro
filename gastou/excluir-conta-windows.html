@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Excluir conta no Windows · Gastou!</title>
+<style>
+  :root { --bg: #f6f8f6; --ink: #15231a; --muted: #4d6055; --line: #dbe3dd; --accent: #1f6b3a; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #0f1a13; --ink: #e8f3ec; --muted: #9fb7a6; --line: #2c4a37; --accent: #7ddc92; } }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.6 system-ui, -apple-system, 'Segoe UI', Arial, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 28px; margin: 0 0 8px; }
+  h2 { font-size: 19px; margin: 28px 0 8px; }
+  p.sub { color: var(--muted); margin: 0 0 8px; }
+  ol, ul { padding-left: 20px; }
+  li { margin: 4px 0; }
+  a { color: var(--accent); }
+  code { background: rgba(127,127,127,.15); padding: 1px 6px; border-radius: 6px; font-size: 14px; }
+  .caixa { border: 1px solid var(--line); border-radius: 12px; padding: 4px 16px 12px; margin-top: 8px; }
+</style>
+</head>
+<body>
+<main>
+<h1>Como excluir sua conta do Gastou! no Windows</h1>
+<p class="sub">Versão do Gastou! para computadores com Windows (Microsoft Store).</p>
+
+<p>No Windows, o Gastou! guarda seus dados <strong>neste computador</strong>. Não há servidor próprio do Gastou!: se você ativou o backup, a cópia fica na <strong>sua</strong> conta Google ou Microsoft. Por isso a exclusão tem até duas etapas: apagar os dados do computador e, se você usou o backup, apagar a cópia na nuvem.</p>
+
+<h2>Etapa 1. Apagar os dados deste computador</h2>
+<div class="caixa">
+  <p><strong>Se você instalou pela Microsoft Store:</strong></p>
+  <ol>
+    <li>Abra <strong>Configurações → Aplicativos → Aplicativos instalados</strong>.</li>
+    <li>Procure <strong>Gastou! PF</strong>, clique nos três pontos e escolha <strong>Desinstalar</strong>.</li>
+    <li>O Windows apaga junto a conta, as despesas, os blocos, os comprovantes (fotos e PDFs) e o acesso salvo ao Google ou à Microsoft.</li>
+  </ol>
+  <p><strong>Se você instalou pelo instalador (.exe ou .msi) do site:</strong></p>
+  <ol>
+    <li>Desinstale o app do mesmo jeito, em <strong>Aplicativos instalados</strong>.</li>
+    <li>Depois apague a pasta <code>%AppData%\gastou-pf-windows</code> (cole esse endereço na barra do Explorador de Arquivos). É nela que ficam seus dados.</li>
+  </ol>
+  <p>Se quiser só sair da conta e manter os dados neste computador, use <strong>Perfil → Sair da conta</strong> no app.</p>
+</div>
+
+<h2>Etapa 2. Apagar o backup na nuvem (só se você usou)</h2>
+<div class="caixa">
+  <p><strong>Entrou com a Microsoft:</strong></p>
+  <ol>
+    <li>Abra o <a href="https://onedrive.live.com" target="_blank" rel="noreferrer">OneDrive</a> e entre na pasta <strong>Aplicativos</strong>.</li>
+    <li>Exclua a pasta <strong>Gastou!</strong>. Ela contém o <code>backup.json</code> e os comprovantes.</li>
+    <li>Para retirar o acesso do app à sua conta, abra <a href="https://account.live.com/consent/Manage" target="_blank" rel="noreferrer">account.live.com/consent/Manage</a> e remova o <strong>Gastou!</strong>.</li>
+  </ol>
+  <p><strong>Entrou com o Google:</strong></p>
+  <ol>
+    <li>Abra o <a href="https://drive.google.com/drive/settings" target="_blank" rel="noreferrer">Google Drive → Configurações</a> e vá em <strong>Gerenciar apps</strong>.</li>
+    <li>Procure <strong>Gastou!</strong> e escolha <strong>Excluir dados ocultos do app</strong>.</li>
+    <li>Para retirar o acesso, abra <a href="https://myaccount.google.com/permissions" target="_blank" rel="noreferrer">myaccount.google.com/permissions</a> e remova o <strong>Gastou!</strong>.</li>
+  </ol>
+</div>
+
+<h2>O que é apagado</h2>
+<ul>
+  <li>A conta e os dados de cadastro (nome, e-mail, CPF, telefone, CNPJ e chave PIX).</li>
+  <li>Todas as despesas, blocos, tipos de despesa e configurações.</li>
+  <li>As fotos e os PDFs dos comprovantes.</li>
+  <li>O backup na nuvem, depois da Etapa 2.</li>
+</ul>
+<p>A exclusão não pode ser desfeita. Relatórios que você já salvou ou enviou (PDF, Excel) ficam onde você os guardou, como na pasta Downloads, e precisam ser apagados por você.</p>
+
+<h2>Precisa de ajuda?</h2>
+<p>Escreva para <strong><a href="mailto:gastou.app@gmail.com">gastou.app@gmail.com</a></strong> com o assunto "Excluir conta Gastou!" e diga qual etapa não deu certo.</p>
+
+<p><a href="privacidade.html">Política de Privacidade</a> · <a href="excluir-conta.html">Excluir conta no celular (Android)</a></p>
+</main>
+</body>
+</html>
